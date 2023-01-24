@@ -1,0 +1,21 @@
+void insertionSort1(int n, vector<int> arr) {
+   int h, a;
+  for(int i=1; i<n; i++)
+  {
+      h=arr[i], a=i-1;
+  while(a>=0 && arr[a]>h)
+  {
+      arr[a+1]=arr[a];
+      a--;
+     
+  for(int j=0; j<n; j++)
+  cout<<arr[j]<<" ";
+  cout<<endl;
+  }
+  arr[a+1]=h;
+  
+  }
+  
+  for(int j=0; j<n; j++)
+  cout<<arr[j]<<" ";
+}
