@@ -1,0 +1,19 @@
+void countSwaps(vector<int> a) {
+    int numswap=0;
+    int firstelement;
+    int lastelement;
+for(int i=0; i<a.size(); i++)
+{
+    for(int j=i+1; j<a.size(); j++)
+    if(a[i]>a[j]){
+    swap(a[i],a[j]);
+    numswap++;
+    }
+}
+    firstelement=a[0];
+    lastelement=a[a.size()-1];
+    cout<<"Array is sorted in "<<numswap<<" swaps."<<endl;
+   cout<<"First Element: "<<firstelement<<endl;
+    cout<<"Last Element: "<< lastelement<<endl;
+
+}
